@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*:not(dialog) {
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 1fr minmax(500px, 5fr);
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+}
+
+.wrapper > * {
+    background-color: rgb(233, 199, 126);
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+    font-size: 2em;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 10px;
+    grid-auto-rows: min-content;
+}
+
+.sidebar> * {
+    background-color: rgb(241, 229, 201);
+}
