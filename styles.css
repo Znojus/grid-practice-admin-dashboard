@@ -16,7 +16,9 @@
     height: 100vh;
 }
 
-.wrapper > * {
+.wrapper > *,
+.sidebar > *,
+.header-row1 > * {
     background-color: rgb(233, 199, 126);
 }
 
@@ -52,4 +54,19 @@
 
 .dashboard {
     font-size: 50px;
+}
+
+.header {
+    display: grid;
+}
+
+.header-row1 {
+    display: grid;
+    grid-template-columns: 50px minmax(300px, 3fr) 50px 100px 1fr;
+    grid-template-rows: min-content;
+}
+
+.header-row1 > input {
+    height: 50px;
+    width: 70%;
 }
