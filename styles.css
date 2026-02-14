@@ -107,10 +107,20 @@ button {
     width: 100%;
     justify-self: center;
     border: none;
+    font-size: 1.5em;
 }
 
 .header,
 .header-row1,
 .header-row2 {
     min-width: 0;
+}
+
+.hi-there div:first-child {
+    font-size: 1.1em;
+}
+
+.hi-there div:first-child + div {
+    font-size: 2em;
+    font-weight: 900;
 }
