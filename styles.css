@@ -25,11 +25,28 @@
     font-size: 2em;
 
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 50px 1fr;
     gap: 10px;
     grid-auto-rows: min-content;
 }
 
 .sidebar> * {
     background-color: rgb(241, 229, 201);
+}
+
+.sidebar-main, .sidebar-additional, .dashboard {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: subgrid;
+
+}
+
+.sidebar-text, .sidebar-logo {
+    display: grid;
+    align-items: center;
+}
+
+.dashboard {
+    font-size: 50px;
 }
