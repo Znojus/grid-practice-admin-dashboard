@@ -39,7 +39,9 @@
 .sidebar > *,
 .header-row1> *,
 .header-row2 > *,
-.card {
+.card,
+.ann-card,
+.trend-card {
     background-color: rgb(241, 229, 201);
 }
 
@@ -134,6 +136,7 @@ button {
     gap: 30px;
 }
 
+
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
@@ -151,8 +154,39 @@ h2 {
     padding-top: 40px;
 }
 
+.card,
+.ann-card,
+.trend-card {
+    border-radius: 10px;
+}
+
 .card {
     padding: 20px;
     border-radius: 10px;
     font-size: 1.3em;
+}
+
+hr {
+    border: 1px solid rgb(255, 255, 255);
+    margin: 24px 0;
+}
+
+.ann-card {
+    padding: 20px;
+}
+
+.trend-card {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.text {
+    display: grid;
+    align-content: center;
+}
+
+.right-column {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 30px;
 }
