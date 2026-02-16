@@ -125,3 +125,26 @@ button {
     font-size: 2em;
     font-weight: 900;
 }
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+    gap: 30px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+h2 {
+    margin-bottom: 14px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 48px 48px 48px;
+    justify-content: end;
+}
