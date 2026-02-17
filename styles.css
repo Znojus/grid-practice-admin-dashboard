@@ -177,12 +177,15 @@ hr {
 
 .trend-card {
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 20px;
+    align-items: center;
+
+    padding: 0px 50px;
 }
 
-.text {
-    display: grid;
-    align-content: center;
+.trend-card > img {
+    min-width: 100px;
 }
 
 .right-column {
@@ -190,3 +193,9 @@ hr {
     grid-template-rows: auto 1fr;
     gap: 30px;
 }
+
+.trend-wrap {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
