@@ -184,6 +184,11 @@ h2 {
     border-radius: 10px;
     font-size: 1.3em;
     border-left: 10px solid var(--accent-color);
+    display: grid;
+}
+
+.icons {
+    align-self: end;
 }
 
 hr {
