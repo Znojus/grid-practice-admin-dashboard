@@ -29,12 +29,12 @@
 button {
     color: var(--white-color);
     fill: var(--white-color);
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .wrapper {
     display: grid;
-    grid-template-rows: 250px minmax(500px, 5fr);
+    grid-template-rows: auto minmax(500px, 5fr);
     grid-template-columns: 1fr 4fr;
     min-height: 100vh;
 
@@ -130,7 +130,6 @@ button {
     justify-self: center;
     border: none;
     font-size: 1.5em;
-    font-weight: 900;
     background-color: var(--accent-color);
 }
 
@@ -192,6 +191,8 @@ h2 {
 
 .icons {
     align-self: end;
+    display: grid;
+    column-gap: 10px;
 }
 
 hr {
