@@ -118,7 +118,7 @@ input[type="search"]:focus {
 
 .header-row2 {
     display: grid;
-    grid-template-columns: 100px minmax(500px, 6fr) repeat(3, minmax(100px, 200px));
+    grid-template-columns: 120px minmax(500px, 6fr) repeat(3, minmax(100px, 200px));
     align-items: center;
     column-gap: 18px;
 }
@@ -244,4 +244,10 @@ img {
     width: 100px;
     justify-self: center;
     border-radius: 50px;
+}
+
+.header-row2 img {
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
 }
